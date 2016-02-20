@@ -25,7 +25,7 @@ Qui trovate tutti gli sketch del corso
 - [ ] sketch13: Pilotare un motore con metà ponte H.
 - [ ] sketch14: Pilotare un motore con un ponte H intero.
 
-#### Lezione 2, parte 2: La libreria Serial
+#### Lezione 2, parte 2: Comunicazione
 - [ ] sketch15: Stampa della tabella ASCII sul terminale seriale.
 - [ ] sketch16: Leggere lo stato di un pulsante sul terminale seriale.
 - [ ] sketch17: Leggere il valore di un potenziometro sul terminale seriale.
@@ -33,3 +33,22 @@ Qui trovate tutti gli sketch del corso
 - [ ] sketch19: Regolare la luminosità di un LED dal terminale seriale.
 - [ ] sketch20: Comandare più LED dal terminale seriale.
 - [ ] sketch21: Regolare la luminosità di più LED dal terminale seriale.
+
+#### Lezione 3, parte 1: Servocomandi
+- [ ] sketch22: Pilotare un servocomando autonomamente usando delay.
+- [ ] sketch23: Pilotare un servocomando autonomamente usando millis.
+- [ ] sketch24: Pilotare un servocomando usando un potenziometro.
+- [ ] sketch25: Pilotare un servocomando usando i pulsanti.
+- [ ] sketch26: Pilotare un servocomando con la comunicazione seriale.
+
+#### Lezione 3, parte 2: Display LCD
+- [ ] sketch27: Scrivere del semplice testo su un diplay a caratteri.
+- [ ] sketch28: Scrivere i secondi da cui è acceso Arduino su un diplay a caratteri.
+- [ ] sketch29: Scrivere il tempo esteso da cui è acceso Arduino su un diplay a caratteri.
+- [ ] sketch30: Scrivere del testo ricevuto dal terminale seriale su un diplay a caratteri.
+- [ ] sketch31: Scrivere del testo sul display facendolo scorrere.
+- [ ] sketch32: Scrivere la temperatura letta da un termistore sul display.
+- [ ] sketch33: Gestione della temperatura attraverso un semplice termostato con display.
+
+#### Lezione 4, parte 1: Buzzer
+- [ ] sketch34: 
