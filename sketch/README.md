@@ -3,7 +3,7 @@ Qui trovate tutti gli sketch del corso
 
 ## Indice degli sketch
 
-[] sketch00: Contiene una breve guida di riferimento e alcuni elementi sintattici.
+-[] sketch00: Contiene una breve guida di riferimento e alcuni elementi sintattici.
 
 ### Lezione 1, parte 1
 [x] sketch01: Il classico blink, come far lampeggiare un LED a intervalli regolari.
