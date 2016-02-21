@@ -1,26 +1,14 @@
-/*
-	usiamo una variabile booleana per accendere un LED
-	spegnendo l’altro quando premiamo un pulsante
-	senza l'ausilio di struttore di controllo
-*/
+/* vogliamo lampeggiare un LED a intervalli regolari */
 
-const int led0 = 2;		// il pin dove è il primo LED
-const int led1 = 3;		// il pin dove è il secondo LED
-const int button = 4;	// il pin dove è il pulsante
+const int led = 2,	button = 3; // il pin dove è connesso il LED ‘L’
 
-void setup ()
+void setup ()		// gira solo all’accensione
 {
-	pinMode(led0, OUTPUT);	// impostiamo come output
-	pinMode(led1, OUTPUT);	// impostiamo come output
-	pinMode(button, INPUT);	// impostiamo come input
+	pinMode(led, OUTPUT);	// impostiamo come output
+	pinMode(button, INPUT);
 }
 
-void loop ()
+void loop ()		// gira all’infinito, in loop appunto
 {
-	// leggiamo lo stato del pulsante
-	bool stat = digitalRead(button);
-
-	digitalWrite(led0, stat);	// acceso se true
-
-	digitalWrite(led1, !stat);	// spento se true
+	digitalWrite(led, digitalRead(button));		// 
 }

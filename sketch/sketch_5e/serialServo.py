@@ -32,6 +32,7 @@ window = tk.Tk()												# GUI window object declaration
 
 def update(var):												# function connected to scale0
 	arduino.write(chr(int(var)))								# I know, a bit confusing, we want to write to the serial port a byte representing the scale value
+	#print var													# for debugging purposes
 
 scale0 = tk.Scale(window, from_=180, to=0, command=update)		# create scale object, use 255-0 values (unsigned 8-bit integer), set which command to execute when moved
 label0 = tk.Label(window, text='Channel 0')						# create label object to recognize channel

@@ -7,15 +7,20 @@ Qui trovate tutti gli sketch del corso
 
 #### Lezione 1, parte 1: Le basi
 - [x] sketch_1a: Il classico blink, come far lampeggiare un LED a intervalli di tempo.
-- [x] sketch_1b: Uso di una variabile booleana per accendere un LED spegnendo l'altro quando si preme un pulsante.
-- [x] sketch_1c: Accendere un LED spegnendo l'altro quando si preme un pulsante senza l'uso di variabili.
+- [x] sketch_1b: Accendere un LED alla pressione di un pulsante.
+- [x] sketch_1c: Uso di not per accendere un LED spegnendo l'altro quando si preme un pulsante (senza variabili).
+- [x] sketch_1d: Uso di not per accendere un LED spegnendo l'altro quando si preme un pulsante.
+- [x] sketch_1e: Uso di and per accendere un LED solo se entrambi i due (o più) pulsanti vengono premuti (senza variabili).
+- [x] sketch_1f: Uso di and per accendere un LED solo se entrambi i due (o più) pulsanti vengono premuti.
+- [x] sketch_1g: Uso di or per accendere un LED se viene premuto almeno uno dei due (o più) pulsanti (senza variabili).
+- [x] sketch_1h: Uso di or per accendere un LED se viene premuto almeno uno dei due (o più) pulsanti.
 
 #### Lezione 1, parte 2: Strutture di controllo
-- [ ] sketch_2a: Utilizzo di if per cambiare lo stato di un LED alla pressione di un pulsante.
-- [ ] sketch_2b: Utilizzo di if e millis per far lampeggiare un LED senza delay.
-- [ ] sketch_2c: Cambiare lo stato di un LED alla pressione di un pulsante con debounce avanzato.
-- [ ] sketch_2d: Utilizzo di while per far lampeggiare un LED durante la pressione di un pulsante.
-- [ ] sketch_2e: Cambiare lo stato di un LED da spento a lampeggiante alla pressione di un pulsante.
+- [x] sketch_2a: Utilizzo di if per cambiare lo stato di un LED alla pressione di un pulsante.
+- [x] sketch_2b: Utilizzo di if e millis per far lampeggiare un LED senza delay.
+- [x] sketch_2c: Cambiare lo stato di un LED alla pressione di un pulsante con debounce avanzato.
+- [x] sketch_2d: Utilizzo di while per far lampeggiare un LED durante la pressione di un pulsante.
+- [x] sketch_2e: Cambiare lo stato di un LED da spento a lampeggiante alla pressione di un pulsante.
 - [x] sketch_2f: Utilizzo del ciclo for per ricreare "l'effetto Kitt".
 - [x] sketch_2g: Utilizzo del ciclo for con un array di pin.
 
