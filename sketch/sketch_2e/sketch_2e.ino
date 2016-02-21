@@ -4,7 +4,7 @@
 */
 
 const int led = 2, button = 3, ledSpeed = 1000, debounce = 250;
-bool state, LEDstate = true, prevState = false, buttonState;
+bool blinkState, LEDstate = true, prevState = false, buttonState;
 unsigned long prevDebounce, prevBlink;
 
 void setup ()
@@ -19,13 +19,13 @@ void loop ()
 
 	if (buttonState != prevState && millis() > prevDebounce + debounce)
 	{
-		state = !state;
+		blinkState = !blinkState;
 		prevDebounce = millis();
 	}
 	
 	prevState = buttonState;
 
-	if (state)
+	if (blinkState)
 	{
 		if (millis() > prevBlink + ledSpeed)
 		{
