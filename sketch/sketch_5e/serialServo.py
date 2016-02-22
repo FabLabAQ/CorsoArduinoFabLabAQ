@@ -31,7 +31,8 @@ arduino = serial.Serial(PORT, BAUD)								# open the serial port
 window = tk.Tk()												# GUI window object declaration
 
 def update(var):												# function connected to scale0
-	arduino.write(chr(int(var)))								# I know, a bit confusing, we want to write to the serial port a byte representing the scale value
+	#arduino.write(chr(int(var)))								# I know, a bit confusing, we want to write to the serial port a byte representing the scale value
+	arduino.write("S"+var)										# Not needed if you are using integer parsing on Arduino/MCU
 	#print var													# for debugging purposes
 
 scale0 = tk.Scale(window, from_=180, to=0, command=update)		# create scale object, use 255-0 values (unsigned 8-bit integer), set which command to execute when moved
