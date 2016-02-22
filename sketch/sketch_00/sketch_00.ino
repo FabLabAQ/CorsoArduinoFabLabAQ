@@ -1,6 +1,7 @@
 /*
 	Questo sketch contiene una breve guida di riferimento
 	per la sintassi e le funzioni base Arduino
+	IGNORE: TEST EDIT DA LUIGI TESSITORE 220216
 */
 
 // ************* Lezione 1 parte 1 *************
