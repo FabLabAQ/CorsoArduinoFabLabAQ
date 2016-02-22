@@ -1,20 +1,35 @@
 /*
-	usiamo il PWM per regolare la luminosità di un LED
-	o la velocità di un motore usando un potenziometro
+	Accendere una serie di LED secondo la posizione di un potenziometro.
+	Versione con array.
 */
 
-const int led = 3;	// il pin dove è connesso il LED
-const int pot = A0;	// il pin del potenziometro
+const int ledNum = 6, leds[ledNum] = { 3, 5, 6, 9, 10, 11 }, ledSpeed = 5;
 
 void setup ()
 {
-	pinMode(led, OUTPUT);	// impostiamo come output
-	pinMode(pot, INPUT);	// impostiamo come input
+	for(int i=0; i<ledNum; i++)
+	{
+		pinMode(leds[i], OUTPUT);
+	}
 }
 
 void loop ()
 {
-	int val = analogRead(pot) /4;	// leggiamo e dividiamo
-	// dividiamo per 4 perchè 0~1023 -> 1024/4=256 -> 0~255
-	analogWrite(led, val);			// pilotiamo il LED
+	for(int i=0; i<ledNum; i++)
+	{
+		for(int j=0; j<255; j++)
+		{
+			analogWrite(leds[i], j);
+			delay(ledSpeed);
+		}
+	}
+
+	for(int i=ledNum -1; i>0; i--)
+	{
+		for(int j=255; j>0; j--)
+		{
+			analogWrite(leds[i], j);
+			delay(ledSpeed);
+		}
+	}
 }
