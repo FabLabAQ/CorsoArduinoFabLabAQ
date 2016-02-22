@@ -35,7 +35,7 @@ Qui trovate tutti gli sketch del corso
 - [x] sketch_3h: Pilotare due motori con un ponte H intero.
 
 #### 4. Comunicazione
-- [ ] sketch_4a: Stampa della tabella ASCII sul terminale seriale.
+- [x] sketch_4a: Stampa della tabella ASCII sul terminale seriale.
 - [ ] sketch_4b: Leggere lo stato di un pulsante sul terminale seriale.
 - [ ] sketch_4c: Leggere il valore di un potenziometro sul terminale seriale.
 - [ ] sketch_4d: Comandare un LED dal terminale seriale.
@@ -51,7 +51,7 @@ Qui trovate tutti gli sketch del corso
 - [ ] sketch_5e: Pilotare un servocomando con la comunicazione seriale.
 
 #### 6. Display LCD
-- [ ] sketch_6a: Scrivere del semplice testo su un diplay a caratteri.
+- [ ] sketch_6a: Scrivere del semplice testo su un display a caratteri.
 - [ ] sketch_6b: Scrivere i secondi da cui è acceso Arduino su un diplay a caratteri.
 - [ ] sketch_6c: Scrivere il tempo esteso da cui è acceso Arduino su un diplay a caratteri.
 - [ ] sketch_6d: Scrivere del testo ricevuto dal terminale seriale su un diplay a caratteri.
