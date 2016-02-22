@@ -4,7 +4,7 @@
 */
 
 const int led = 2, button = 3, ledSpeed = 1000, debounce = 250;
-bool blinkState, LEDstate = true, prevState = false, buttonState;
+bool blinkState, LEDstate, prevState, buttonState;
 unsigned long prevDebounce, prevBlink;
 
 void setup ()
@@ -32,10 +32,12 @@ void loop ()
 			LEDstate = !LEDstate;
 			prevBlink = millis();
 		}
-		digitalWrite(led, LEDstate);
 	}
 	else
 	{
-		digitalWrite(led, LOW);
+		prevBlink = 0;
+		LEDstate = LOW;
 	}
+
+	digitalWrite(led, LEDstate);
 }
