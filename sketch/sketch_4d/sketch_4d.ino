@@ -1,5 +1,5 @@
 /*
-	Leggere continuamente il valore di un potenziometro sul terminale seriale.
+	Leggere il valore di un potenziometro sul terminale seriale solo se è cambiato significativamente.
  */
 
 const int pot = A0, sample = 200;// error = 3;

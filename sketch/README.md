@@ -39,10 +39,11 @@ Qui trovate tutti gli sketch del corso
 - [x] sketch_4b: Leggere continuamente il valore di un potenziometro sul terminale seriale.
 - [x] sketch_4c: Leggere lo stato di un pulsante sul terminale seriale solo se viene premuto e senza ripetizioni.
 - [x] sketch_4d: Leggere il valore di un potenziometro sul terminale seriale solo se è cambiato significativamente.
-- [ ] sketch_4e: Comandare un LED dal terminale seriale.
-- [ ] sketch_4f: Regolare la luminosità di un LED dal terminale seriale.
-- [ ] sketch_4g: Comandare più LED dal terminale seriale.
-- [ ] sketch_4h: Regolare la luminosità di più LED dal terminale seriale.
+- [x] sketch_4e: Comandare un LED dal terminale seriale.
+- [x] sketch_4f: Comandare un LED dal terminale seriale con una stringa di testo specifica.
+- [x] sketch_4g: Regolare la luminosità di un LED dal terminale seriale.
+- [ ] sketch_4h: Comandare più LED dal terminale seriale.
+- [ ] sketch_4i: Regolare la luminosità di più LED dal terminale seriale.
 
 #### 5. Servocomandi
 - [ ] sketch_5a: Pilotare un servocomando autonomamente usando delay.
