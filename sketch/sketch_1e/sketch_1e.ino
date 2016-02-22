@@ -1,5 +1,5 @@
 /*
-	Uso di and per accendere un LED solo se
+	Uso dell'operatore booleano AND per accendere un LED solo se
 	entrambi i due (o più) pulsanti vengono premuti
 	senza l'ausilio di variabili
 	equivale a mettere in serie i pulsanti
@@ -14,9 +14,13 @@ void setup ()
 	pinMode(led, OUTPUT);	// impostiamo come output
 	pinMode(button1, INPUT_PULLUP);	// impostiamo come input
 	pinMode(button2, INPUT_PULLUP);	// impostiamo come input
+	// ricordiamoci che con il pullup la lettura è sempre
+	// HIGH/true e quando si preme il pulsante è LOW/false
 }
 
 void loop ()
 {
-	digitalWrite(led, !digitalRead(button1) && !digitalRead(button2));	// acceso se true
+	// invertiamo le letture dato che stiamo usando i pullup
+	// fate sempre attenzione alle parentesi!
+	digitalWrite(led, !digitalRead(button1) && !digitalRead(button2) );
 }

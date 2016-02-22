@@ -1,7 +1,7 @@
 /*
-	usiamo una variabile booleana per accendere un LED
+	Usiamo l'operatore booleano NOT per accendere un LED
 	spegnendo l’altro quando premiamo un pulsante
-	senza l'ausilio di variabili
+	senza l'ausilio di variabili né strutture di controllo
 */
 
 const int led0 = 2;		// il pin dove è il primo LED
