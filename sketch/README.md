@@ -27,11 +27,12 @@ Qui trovate tutti gli sketch del corso
 #### Lezione 2, parte 1: Analog in e PWM
 - [x] sketch_3a: Accendere una serie di LED secondo la posizione di un potenziometro, una sorta di VU-meter.
 - [x] sketch_3b: Come lo sketch precedente ma in versione senza array.
-- [ ] sketch_3c: Variare l'intensità luminosa di un LED a intervalli di tempo.
+- [x] sketch_3c: Variare l'intensità luminosa di un LED a intervalli di tempo.
 - [ ] sketch_3d: Variare l'intensità luminosa di più LED in sequenza.
 - [x] sketch_3e: Regolare la luminosità di un LED o la velocità di un motore con un potenziometro.
-- [ ] sketch_3f: Pilotare un motore con metà ponte H.
-- [ ] sketch_3g: Pilotare un motore con un ponte H intero.
+- [ ] sketch_3f: Regolare la velocità di variazione di luminosità di un LED con un potenziometro.
+- [ ] sketch_3g: Pilotare un motore con metà ponte H.
+- [ ] sketch_3h: Pilotare un motore con un ponte H intero.
 
 #### Lezione 2, parte 2: Comunicazione
 - [ ] sketch_4a: Stampa della tabella ASCII sul terminale seriale.
