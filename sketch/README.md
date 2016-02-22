@@ -5,7 +5,7 @@ Qui trovate tutti gli sketch del corso
 
 - [ ] sketch_00: Contiene una breve guida di riferimento e alcuni elementi sintattici.
 
-#### Lezione 1, parte 1: Le basi
+#### 1. Le basi
 - [x] sketch_1a: Il classico blink, come far lampeggiare un LED a intervalli di tempo.
 - [x] sketch_1b: Accendere un LED alla pressione di un pulsante.
 - [x] sketch_1c: Uso di not per accendere un LED spegnendo l'altro quando si preme un pulsante (senza variabili).
@@ -15,7 +15,7 @@ Qui trovate tutti gli sketch del corso
 - [x] sketch_1g: Uso di or per accendere un LED se viene premuto almeno uno dei due (o più) pulsanti (senza variabili).
 - [x] sketch_1h: Uso di or per accendere un LED se viene premuto almeno uno dei due (o più) pulsanti.
 
-#### Lezione 1, parte 2: Strutture di controllo
+#### 2. Strutture di controllo
 - [x] sketch_2a: Utilizzo di if per cambiare lo stato di un LED alla pressione di un pulsante.
 - [x] sketch_2b: Utilizzo di if e millis per far lampeggiare un LED senza delay.
 - [x] sketch_2c: Cambiare lo stato di un LED alla pressione di un pulsante con debounce avanzato.
@@ -24,7 +24,7 @@ Qui trovate tutti gli sketch del corso
 - [x] sketch_2f: Utilizzo del ciclo for per ricreare "l'effetto Kitt".
 - [x] sketch_2g: Utilizzo del ciclo for con un array di pin.
 
-#### Lezione 2, parte 1: Analog in e PWM
+#### 3. Analog in e PWM
 - [x] sketch_3a: Accendere una serie di LED secondo la posizione di un potenziometro, una sorta di VU-meter.
 - [x] sketch_3b: Come lo sketch precedente ma in versione senza array.
 - [x] sketch_3c: Variare l'intensità luminosa di un LED a intervalli di tempo.
@@ -34,7 +34,7 @@ Qui trovate tutti gli sketch del corso
 - [x] sketch_3g: Pilotare un motore con metà ponte H.
 - [x] sketch_3h: Pilotare due motori con un ponte H intero.
 
-#### Lezione 2, parte 2: Comunicazione
+#### 4. Comunicazione
 - [ ] sketch_4a: Stampa della tabella ASCII sul terminale seriale.
 - [ ] sketch_4b: Leggere lo stato di un pulsante sul terminale seriale.
 - [ ] sketch_4c: Leggere il valore di un potenziometro sul terminale seriale.
@@ -43,14 +43,14 @@ Qui trovate tutti gli sketch del corso
 - [ ] sketch_4f: Comandare più LED dal terminale seriale.
 - [ ] sketch_4g: Regolare la luminosità di più LED dal terminale seriale.
 
-#### Lezione 3, parte 1: Servocomandi
+#### 5. Servocomandi
 - [ ] sketch_5a: Pilotare un servocomando autonomamente usando delay.
 - [ ] sketch_5b: Pilotare un servocomando autonomamente usando millis.
 - [ ] sketch_5c: Pilotare un servocomando usando un potenziometro.
 - [ ] sketch_5d: Pilotare un servocomando usando i pulsanti.
 - [ ] sketch_5e: Pilotare un servocomando con la comunicazione seriale.
 
-#### Lezione 3, parte 2: Display LCD
+#### 6. Display LCD
 - [ ] sketch_6a: Scrivere del semplice testo su un diplay a caratteri.
 - [ ] sketch_6b: Scrivere i secondi da cui è acceso Arduino su un diplay a caratteri.
 - [ ] sketch_6c: Scrivere il tempo esteso da cui è acceso Arduino su un diplay a caratteri.
@@ -59,5 +59,15 @@ Qui trovate tutti gli sketch del corso
 - [ ] sketch_6f: Scrivere la temperatura letta da un termistore sul display.
 - [ ] sketch_6g: Gestione della temperatura attraverso un semplice termostato con display.
 
-#### Lezione 4, parte 1: Buzzer
-- [ ] sketch_7a: 
+#### 7. Buzzer
+- [ ] sketch_7a: Tastiera musicale.
+- [ ] sketch_7b: Theremin con la luce.
+- [ ] sketch_7c: Sensore di vibrazioni.
+- [ ] sketch_7d: Sismografo con LCD.
+- [ ] sketch_7e: Serratura KnockLock.
+
+#### 8. Sensori touch
+- [ ] sketch_8a: Calibrazione sensore attraverso comunicazione seriale.
+- [ ] sketch_8b: Accensione LED.
+- [ ] sketch_8c: Interruttore per accensione LED.
+- [ ] sketch_8d: Tastiera musicale touch.
