@@ -43,7 +43,7 @@ Qui trovate tutti gli sketch del corso
 - [x] sketch_4f: Comandare un LED dal terminale seriale con una stringa di testo specifica.
 - [x] sketch_4g: Regolare la luminosità di un LED dal terminale seriale.
 - [x] sketch_4h: Comandare più LED dal terminale seriale.
-- [x] sketch_4i: Regolare la luminosità di più LED dal terminale seriale.
+- [ ] sketch_4i: Pilotare un LED RGB con la comunicazione seriale.
 
 #### 5. Servocomandi
 - [ ] sketch_5a: Pilotare un servocomando autonomamente usando delay.

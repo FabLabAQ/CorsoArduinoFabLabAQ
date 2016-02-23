@@ -2,7 +2,7 @@
 # coding: UTF-8
 
 """
- serialServo
+ serialRGB
  Copyright (C) 2015
  Luca Anastasio <anastasio.lu@gmail.com>
 
@@ -30,16 +30,30 @@ BAUD = 9600														# select baudrate
 arduino = serial.Serial(PORT, BAUD)								# open the serial port
 window = tk.Tk()												# GUI window object declaration
 
-def update(var):												# function connected to scale0
-	#arduino.write(chr(int(var)))								# I know, a bit confusing, we want to write to the serial port a byte representing the scale value
-	arduino.write("S"+var)										# Not needed if you are using integer parsing on Arduino/MCU
-	#print var													# for debugging purposes
+def update0(var):
+	arduino.write("L0 "+var)
 
-scale0 = tk.Scale(window, from_=180, to=0, command=update)		# create scale object, use 255-0 values (unsigned 8-bit integer), set which command to execute when moved
-label0 = tk.Label(window, text='Channel 0')						# create label object to recognize channel
+def update1(var):
+	arduino.write("L1 "+var)
+
+def update2(var):
+	arduino.write("L2 "+var)
+
+scale0 = tk.Scale(window, from_=255, to=0, command=update0)		# create scale object, use 255-0 values (unsigned 8-bit integer), set which command to execute when moved
+label0 = tk.Label(window, text='Red')							# create label object to recognize channel
 scale0.grid(column=0, row=0)									# place scale0 in column 0, row 0
 label0.grid(column=0, row=1)									# place label0 under scale0
 
-window.title("serialServo")										# give a title to the window
-window.geometry("80x160+0+0")									# set a dimension
+scale1 = tk.Scale(window, from_=255, to=0, command=update1)
+label1 = tk.Label(window, text='Green')
+scale1.grid(column=1, row=0)
+label1.grid(column=1, row=1)
+
+scale2 = tk.Scale(window, from_=255, to=0, command=update2)
+label2 = tk.Label(window, text='Blue')
+scale2.grid(column=2, row=0)
+label2.grid(column=2, row=1)
+
+window.title("serialRGB")										# give a title to the window
+window.geometry("180x160+0+0")									# set a dimension
 window.mainloop()												# finally, run it

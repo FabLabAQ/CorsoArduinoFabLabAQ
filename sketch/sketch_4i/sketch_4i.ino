@@ -1,16 +1,16 @@
 /*
-	Comandare più LED dal terminale seriale.
+	Pilotare un LED RGB con la comunicazione seriale.
 	I comandi da inviare sono del tipo: "L0 255" per accendere il primo led, "L0 0" per spegnerlo
 */
 
-const int ledNum = 6, leds[ledNum] = { 3, 5, 6, 9, 10, 11 };
+const int RGBpins[3] = { 3, 5, 6 };
 
 void setup ()
 {
 	Serial.begin(9600);		// inizializza a velocità 9600
-	for(int i=0; i<=ledNum; i++)
+	for(int i=0; i<3; i++)
 	{
-		pinMode(leds[i], OUTPUT);	// impostiamo come out
+		pinMode(RGBpins[i], OUTPUT);	// impostiamo come out
 	}
 }
 
@@ -20,6 +20,6 @@ void loop ()
 	{
 		int i = Serial.parseInt();
 		int value = Serial.parseInt();
-		analogWrite(leds[i], value);
+		analogWrite(RGBpins[i], value);
 	}
 }
