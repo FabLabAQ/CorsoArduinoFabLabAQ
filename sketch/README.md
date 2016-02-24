@@ -46,11 +46,12 @@ Qui trovate tutti gli sketch del corso
 - [x] sketch_4i: Pilotare un LED RGB con la comunicazione seriale.
 
 #### 5. Servocomandi
-- [ ] sketch_5a: Pilotare un servocomando autonomamente usando delay.
-- [ ] sketch_5b: Pilotare un servocomando autonomamente usando millis.
-- [ ] sketch_5c: Pilotare un servocomando usando un potenziometro.
-- [ ] sketch_5d: Pilotare un servocomando usando i pulsanti.
-- [x] sketch_5e: Pilotare un servocomando con la comunicazione seriale.
+- [x] sketch_5a: Pilotare un servocomando autonomamente usando delay.
+- [x] sketch_5b: Pilotare un servocomando autonomamente usando millis.
+- [x] sketch_5c: Pilotare un servocomando usando un potenziometro.
+- [x] sketch_5d: Pilotare un servocomando usando i pulsanti con scorrimento continuo.
+- [ ] sketch_5e: Pilotare un servocomando usando i pulsanti con incrementi a ogni pressione.
+- [x] sketch_5f: Pilotare un servocomando con la comunicazione seriale.
 
 #### 6. Display LCD
 - [ ] sketch_6a: Scrivere del semplice testo su un display a caratteri.
@@ -72,4 +73,5 @@ Qui trovate tutti gli sketch del corso
 - [ ] sketch_8a: Calibrazione sensore attraverso comunicazione seriale.
 - [ ] sketch_8b: Accensione LED.
 - [ ] sketch_8c: Interruttore per accensione LED.
-- [ ] sketch_8d: Tastiera musicale touch.
+- [ ] sketch_8d: Interruttore per accensione di una serie di LED.
+- [ ] sketch_8e: Tastiera musicale touch.

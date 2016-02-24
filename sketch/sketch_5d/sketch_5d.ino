@@ -1,11 +1,10 @@
 /*
-	Pilotare un servocomando usando i pulsanti con incrementi a ogni pressione.
+	Pilotare un servocomando usando i pulsanti con scorrimento continuo.
 */
 
 #include <Servo.h>
 const int servoPin = 11, buttonPlus = 3, buttonMinus = 2;
 int pos = 90;
-bool pressed;
 
 Servo servo;
 
@@ -18,35 +17,23 @@ void setup ()
 
 void loop ()
 {
-	if (!digitalRead(buttonPlus) && !pressed)
+	if (!digitalRead(buttonPlus))
 	{
-		pos += 9;
+		pos++;
 		if (pos > 180)
 		{
 			pos = 180;
 		}
 		delay(10);
-		pressed = true;
 	}
-	else if (digitalRead(buttonPlus))
+	if (!digitalRead(buttonMinus))
 	{
-		pressed = false;
-	}
-
-	if (!digitalRead(buttonMinus) && !pressed)
-	{
-		pos -= 9;
+		pos--;
 		if (pos < 0)
 		{
 			pos = 0;
 		}
 		delay(10);
-		pressed = true;
 	}
-	else if (digitalRead(buttonMinus))
-	{
-		pressed = false;
-	}
-
 	servo.write(pos);
 }
