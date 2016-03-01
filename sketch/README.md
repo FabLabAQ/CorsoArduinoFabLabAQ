@@ -53,25 +53,41 @@ Qui trovate tutti gli sketch del corso
 - [x] sketch_5e: Pilotare un servocomando usando i pulsanti con incrementi a ogni pressione.
 - [x] sketch_5f: Pilotare un servocomando con la comunicazione seriale.
 
-#### 6. Display LCD
-- [ ] sketch_6a: Scrivere del semplice testo su un display a caratteri.
-- [ ] sketch_6b: Scrivere i secondi da cui è acceso Arduino su un diplay a caratteri.
-- [ ] sketch_6c: Scrivere il tempo esteso da cui è acceso Arduino su un diplay a caratteri.
-- [ ] sketch_6d: Scrivere del testo ricevuto dal terminale seriale su un diplay a caratteri.
-- [ ] sketch_6e: Scrivere del testo sul display facendolo scorrere.
-- [ ] sketch_6f: Scrivere la temperatura letta da un termistore sul display.
-- [ ] sketch_6g: Gestione della temperatura attraverso un semplice termostato con display.
+#### 6. Espansione I/O
+- [ ] sketch_6a: multiplexing output
+- [ ] sketch_6b: multiplexing input
+- [ ] sketch_6c: registri a scorrimento
+- [ ] sketch_6d: display 7 segmenti
+- [ ] sketch_6e: 
 
-#### 7. Buzzer
-- [ ] sketch_7a: Tastiera musicale.
-- [ ] sketch_7b: Theremin con la luce.
-- [ ] sketch_7c: Sensore di vibrazioni.
-- [ ] sketch_7d: Sismografo con LCD.
-- [ ] sketch_7e: Serratura KnockLock.
+#### 7. Display LCD
+- [ ] sketch_7a: Scrivere del semplice testo su un display a caratteri.
+- [ ] sketch_7b: Scrivere i secondi da cui è acceso Arduino su un diplay a caratteri.
+- [ ] sketch_7c: Scrivere del testo casuale su un display a caratteri.
+- [ ] sketch_7d: Scrivere il tempo esteso da cui è acceso Arduino su un diplay a caratteri.
+- [ ] sketch_7e: Scrivere del testo ricevuto dal terminale seriale su un diplay a caratteri.
+- [ ] sketch_7f: Scrivere del testo sul display facendolo scorrere.
+- [ ] sketch_7g: Scrivere la temperatura letta da un termistore sul display.
+- [ ] sketch_7h: Gestione della temperatura attraverso un semplice termostato con display.
+- [ ] sketch_7i: Pilotare un display LCD con un registro a scorrimento per occupare meno pin.
 
-#### 8. Sensori touch
-- [ ] sketch_8a: Calibrazione sensore attraverso comunicazione seriale.
-- [ ] sketch_8b: Accensione LED.
-- [ ] sketch_8c: Interruttore per accensione LED.
-- [ ] sketch_8d: Interruttore per accensione di una serie di LED.
-- [ ] sketch_8e: Tastiera musicale touch.
+#### 8. Buzzer
+- [ ] sketch_8a: Tastiera musicale.
+- [ ] sketch_8b: Theremin con la luce.
+- [ ] sketch_8c: Sensore di vibrazioni.
+- [ ] sketch_8d: Sismografo con LCD.
+- [ ] sketch_8e: Serratura KnockLock.
+
+#### 9. Sensori touch
+- [ ] sketch_9a: Calibrazione sensore attraverso comunicazione seriale.
+- [ ] sketch_9b: Accensione LED.
+- [ ] sketch_9c: Interruttore per accensione LED.
+- [ ] sketch_9d: Interruttore per accensione di una serie di LED.
+- [ ] sketch_9e: Tastiera musicale touch.
+
+#### 10. Robot
+- [ ] sketch_10a: sequenza "animata"
+- [ ] sketch_10b: light follower
+- [ ] sketch_10c: line follower
+- [ ] sketch_10d: convertibile
+- [ ] sketch_10e: 
