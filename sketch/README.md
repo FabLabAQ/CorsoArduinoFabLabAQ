@@ -50,7 +50,7 @@ Qui trovate tutti gli sketch del corso
 - [x] sketch_5b: Pilotare un servocomando autonomamente usando millis.
 - [x] sketch_5c: Pilotare un servocomando usando un potenziometro.
 - [x] sketch_5d: Pilotare un servocomando usando i pulsanti con scorrimento continuo.
-- [ ] sketch_5e: Pilotare un servocomando usando i pulsanti con incrementi a ogni pressione.
+- [x] sketch_5e: Pilotare un servocomando usando i pulsanti con incrementi a ogni pressione.
 - [x] sketch_5f: Pilotare un servocomando con la comunicazione seriale.
 
 #### 6. Display LCD

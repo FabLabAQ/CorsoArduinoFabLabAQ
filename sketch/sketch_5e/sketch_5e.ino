@@ -5,7 +5,7 @@
 #include <Servo.h>
 const int servoPin = 11, buttonPlus = 3, buttonMinus = 2;
 int pos = 90;
-bool pressed;
+bool pressedPlus, pressedMinus;
 
 Servo servo;
 
@@ -18,7 +18,7 @@ void setup ()
 
 void loop ()
 {
-	if (!digitalRead(buttonPlus) && !pressed)
+	if (!digitalRead(buttonPlus) && !pressedPlus)
 	{
 		pos += 9;
 		if (pos > 180)
@@ -26,14 +26,14 @@ void loop ()
 			pos = 180;
 		}
 		delay(10);
-		pressed = true;
+		pressedPlus = true;
 	}
 	else if (digitalRead(buttonPlus))
 	{
-		pressed = false;
+		pressedPlus = false;
 	}
 
-	if (!digitalRead(buttonMinus) && !pressed)
+	if (!digitalRead(buttonMinus) && !pressedMinus)
 	{
 		pos -= 9;
 		if (pos < 0)
@@ -41,11 +41,11 @@ void loop ()
 			pos = 0;
 		}
 		delay(10);
-		pressed = true;
+		pressedMinus = true;
 	}
 	else if (digitalRead(buttonMinus))
 	{
-		pressed = false;
+		pressedMinus = false;
 	}
 
 	servo.write(pos);
