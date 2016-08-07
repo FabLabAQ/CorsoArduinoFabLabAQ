@@ -14,6 +14,7 @@ Qui trovate tutti gli sketch del corso
 - [x] sketch_1f: Uso di and per accendere un LED solo se entrambi i due (o più) pulsanti vengono premuti.
 - [x] sketch_1g: Uso di or per accendere un LED se viene premuto almeno uno dei due (o più) pulsanti (senza variabili).
 - [x] sketch_1h: Uso di or per accendere un LED se viene premuto almeno uno dei due (o più) pulsanti.
+- [x] sketch_1i: Uso combinato di not, and, or.
 
 #### 2. Strutture di controllo
 - [x] sketch_2a: Utilizzo di if per cambiare lo stato di un LED alla pressione di un pulsante.
@@ -59,7 +60,7 @@ Qui trovate tutti gli sketch del corso
 - [ ] sketch_6b: multiplexing input
 - [ ] sketch_6c: registri a scorrimento
 - [ ] sketch_6d: display 7 segmenti
-- [ ] sketch_6e: 
+- [ ] sketch_6e: timer con display 7 segmenti
 
 #### 7. Display LCD
 - [ ] sketch_7a: Scrivere del semplice testo su un display a caratteri.
