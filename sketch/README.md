@@ -88,11 +88,10 @@ Qui trovate tutti gli sketch del corso
 - [ ] sketch_9e: Tastiera musicale touch.
 
 #### 10. Robot
-- [ ] sketch_10a: sequenza "animata"
-- [ ] sketch_10b: light follower
+- [ ] sketch_10a: calibrazione dei sensori attraverso comunicazione seriale
+- [ ] sketch_10b: creazione di una funzione per la gestione dei motori
 - [ ] sketch_10c: line follower
-- [ ] sketch_10d: convertibile
-- [ ] sketch_10e: 
+- [ ] sketch_10d: light follower
 
 #### 11. Avanzato
 - [ ] sketch_11a: usare i pin mediante i registri
