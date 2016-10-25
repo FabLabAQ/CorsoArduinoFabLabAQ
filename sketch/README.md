@@ -93,3 +93,10 @@ Qui trovate tutti gli sketch del corso
 - [ ] sketch_10c: line follower
 - [ ] sketch_10d: convertibile
 - [ ] sketch_10e: 
+
+#### 11. Avanzato
+- [ ] sketch_11a: usare i pin mediante i registri
+- [ ] sketch_11b: cambiare la frequenza del PWM
+- [ ] sketch_11c: misurare la velocità di un motore con encoder e interrupt
+- [ ] sketch_11d: regolare la velocità di un motore con PID
+- [ ] sketch_11e: usare PID per il robottino
