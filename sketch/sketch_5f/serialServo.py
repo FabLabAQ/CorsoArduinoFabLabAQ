@@ -24,11 +24,25 @@
 import Tkinter as tk											# Tkinter library used for GUI
 import serial													# import pyserial library
 
-PORT = '/dev/ttyACM0'											# select serial port, Arduinos with ATmega16U2 default to ttyACM0
+import Tkinter as tk											# Tkinter library used for GUI
+import serial, serial.tools.list_ports							# import pyserial library
+
+VID_PID = "2341:0243"											# Genuino UNO vid:pid
 BAUD = 9600														# select baudrate
 
-arduino = serial.Serial(PORT, BAUD)								# open the serial port
 window = tk.Tk()												# GUI window object declaration
+window.title("serialRGB")										# give a title to the window
+window.geometry("80x160+0+0")									# set a dimension
+
+try:
+	PORT = list(serial.tools.list_ports.grep(VID_PID))[0][0]		# find the serial port
+	arduino = serial.Serial(PORT, BAUD)								# open the serial port
+except:
+	window.geometry("250x250+0+0")
+	text = tk.Text(window)
+	text.grid(column=0, row=0)
+	text.insert(tk.INSERT, "Serial port error.")
+	window.mainloop()												# GUI window object declaration
 
 def update(var):												# function connected to scale0
 	#arduino.write(chr(int(var)))								# I know, a bit confusing, we want to write to the serial port a byte representing the scale value
@@ -40,6 +54,4 @@ label0 = tk.Label(window, text='Channel 0')						# create label object to recogn
 scale0.grid(column=0, row=0)									# place scale0 in column 0, row 0
 label0.grid(column=0, row=1)									# place label0 under scale0
 
-window.title("serialServo")										# give a title to the window
-window.geometry("80x160+0+0")									# set a dimension
 window.mainloop()												# finally, run it
