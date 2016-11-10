@@ -24,7 +24,8 @@
 import Tkinter as tk											# Tkinter library used for GUI
 import serial, serial.tools.list_ports							# import pyserial library
 
-VID_PID = "2341:0243"											# Genuino UNO vid:pid
+VID_PID_Genuino = "2341:0243"									# Genuino UNO vid:pid
+VID_PID_Arduino = "2341:0043"									# Arduino UNO vid:pid
 BAUD = 9600														# select baudrate
 
 window = tk.Tk()												# GUI window object declaration
@@ -32,13 +33,17 @@ window.title("serialRGB")										# give a title to the window
 window.geometry("180x160+0+0")									# set a dimension
 
 try:
-	PORT = list(serial.tools.list_ports.grep(VID_PID))[0][0]		# find the serial port
-	arduino = serial.Serial(PORT, BAUD)								# open the serial port
+	PORT = list(serial.tools.list_ports.grep(VID_PID_Genuino))[0][0]	# find the serial port
+	arduino = serial.Serial(PORT, BAUD)									# open the serial port
 except:
-	text = tk.Text(window)
-	text.grid(column=0, row=0)
-	text.insert(tk.INSERT, "Errore porta seriale")
-	window.mainloop()
+	try:
+		PORT = list(serial.tools.list_ports.grep(VID_PID_Arduino))[0][0]	# find the serial port
+		arduino = serial.Serial(PORT, BAUD)									# open the serial port
+	except:
+		text = tk.Text(window)
+		text.grid(column=0, row=0)
+		text.insert(tk.INSERT, "Errore porta seriale")
+		window.mainloop()
 
 def update0(var):
 	arduino.write("L0 "+var)
