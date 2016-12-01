@@ -3,7 +3,10 @@
 	Versione con array.
 */
 
-const int ledNum = 6, leds[ledNum] = { 2, 3, 4, 5, 6, 7 }, pot = A0, ledVal = 1024 / ledNum;
+const int 	ledNum = 6,
+			leds[ledNum] = { 2, 3, 4, 5, 6, 7 },
+			pot = A0,
+			ledVal = 1024 / ledNum;
 
 void setup ()
 {
